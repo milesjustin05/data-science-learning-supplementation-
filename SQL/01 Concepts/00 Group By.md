@@ -1,8 +1,8 @@
 # Group By
-Tags: #sql #fundamentals #aggregation
+Tags: #sql #group-by
 
 ## What it does
-Collapses rows that share the same value in a column into a  single row, so you can run aggregate calculations on each group.
+Collapses rows that share the same value in a column into a single row, so you can run aggregate calculations on each group.
 
 ## Quick Reference
 See also: [[01 SQL Cheatsheet]]
@@ -31,6 +31,15 @@ GROUP BY column;
 | MAX()    | highest value |
 | MIN()    | lowest value |
 
+## Relating to HAVING, ORDER BY, ETC..
+**Logical execution order:**
+`FROM` → `WHERE` → `GROUP BY` → `HAVING` → `SELECT` → `ORDER BY`
+
+**Quick rule of thumb:**
+- Filtering raw rows → `WHERE`
+- Filtering summarized/grouped data → `HAVING`
+- Sorting the final output → `ORDER BY`
+
 ## Data science use cases
 - Summarizing sales by region, category, or time period
 - Counting events per user (sessions, clicks, purchases)
@@ -45,4 +54,5 @@ GROUP BY column;
 - ORDER of clauses: WHERE → GROUP BY → HAVING → ORDER BY
 
 ## Linked notes
-[[SELECT & WHERE]] [[HAVING]] [[Window Functions]] [[CTEs]]
+[[6-26 Group By Practice]]
+[[01 Having Clause]] 

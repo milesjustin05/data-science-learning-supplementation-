@@ -46,14 +46,6 @@ GROUP BY col
 ## Practice Note Template
 
 ````
-# Practice Goal: Topic Name
-Practice problems by Claude.
-
-## Data Tables
-```sql
-table (col1, col2, col3)
-```
-
 **Problem 1:** Question
 
 Attempt:

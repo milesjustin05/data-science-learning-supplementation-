@@ -12,3 +12,8 @@ Was putting raw columns in SELECT without wrapping in COUNT/SUM/AVG
 Wrote GROUP BY MONTH instead of repeating the full expression
 **Rule:** `GROUP BY EXTRACT(MONTH FROM col)` not `GROUP BY MONTH`
 
+#### Missing commas
+In my select statements, often forgot commas between variables
+**Rule:** Commas in between variables
+
+
